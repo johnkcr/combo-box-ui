@@ -1,0 +1,71 @@
+.combo-box {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px; /* Set width as needed */
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper::before {
+  position: absolute;
+  content: '\25BC';
+  top: 4px;
+  right: 8px;
+  height: 8px;
+  width: 10px;
+}
+
+.input-wrapper input {
+  flex-grow: 1;
+  border: none;
+  padding: 8px;
+  background: #f0f0f0;
+  font-size: 16px;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+}
+
+.dropdown-icon {
+  background: none;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border-left: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+  outline: none;
+}
+
+.combo-box-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding-left: 0px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: 1px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+.icon {
+  margin-right: 10px;
+}
